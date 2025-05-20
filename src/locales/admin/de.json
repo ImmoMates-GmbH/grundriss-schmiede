@@ -1,0 +1,18 @@
+{
+  "admin": {
+    "title": "Adminseite",
+    "description": "Admin-Bereich",
+    "settings": {
+      "title": "Einstellungen",
+      "description": "Konfigurieren Sie die Anwendung"
+    },
+    "users": {
+      "title": "Benutzer",
+      "description": "Verwalten Sie die Benutzer der Anwendung"
+    },
+    "roles": {
+      "title": "Rollen",
+      "description": "Verwalten Sie die Rollen der Anwendung"
+    }
+  }
+}
