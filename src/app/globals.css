@@ -44,7 +44,7 @@
   --text-primary: #000;
   --text-secondary: #fff;
   --text-tertiary: #8491a5;
-  --ring: #000;
+  --ring: oklch(0.705 0.015 286.067);
 
   --success: #22c55e;
   --destructive: oklch(0.577 0.245 27.325);
