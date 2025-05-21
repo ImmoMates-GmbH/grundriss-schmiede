@@ -6,5 +6,6 @@
   "bracketSpacing": true,
   "htmlWhitespaceSensitivity": "css",
   "singleAttributePerLine": false,
+  "tailwindFunctions": ["clsx", "cn", "cva"],
   "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"]
 }

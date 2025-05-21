@@ -1,11 +1,16 @@
+import Navbar from "@/components/layouts/public";
+
 export default function PublicLayout({
   children,
+  params,
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ lang: "de" | "en" }>;
 }>) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <>
+      <Navbar params={params} />
       <main className="flex-grow">{children}</main>
-    </div>
+    </>
   );
 }

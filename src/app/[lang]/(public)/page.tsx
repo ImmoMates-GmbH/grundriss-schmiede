@@ -1,4 +1,4 @@
-import { getDictionary } from "./dictionaries";
+import { getDictionary } from "@/lib/public/dictionaries";
 
 export default async function Home({
   params,

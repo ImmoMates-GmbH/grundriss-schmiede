@@ -1,6 +1,18 @@
 {
-    "homePage": {
-        "title": "Welcome to the Home Page",
-        "description": "This is the home page of our application."
-    }
+  "common": {
+    "floorPlan": "Floor plan",
+    "floorPlans": "Floor plans",
+    "threeSixtyTour": "360 Overview Tour",
+    "salesOptimized": "Sales optimized floor plans",
+    "sized": "Dimensioned floor plans",
+    "measuringService": "On-site measuring service",
+    "individual": "Individual floor plans",
+    "floorPlanDesigns": "Floor plan designs",
+    "threeSixtyTourService": "360 Tour Service"
+  },
+
+  "homePage": {
+    "title": "Welcome to the Home Page",
+    "description": "This is the home page of our application."
+  }
 }
