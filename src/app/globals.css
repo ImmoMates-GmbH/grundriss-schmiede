@@ -13,6 +13,7 @@
   --color-text-primary: var(--text-primary);
   --color-text-secondary: var(--text-secondary);
   --color-text-tertiary: var(--text-tertiary);
+  --color-text-navbar: var(--text-navbar);
 
   --color-success: var(--success);
   --color-destructive: var(--destructive);
@@ -35,6 +36,7 @@
 :root {
   --radius: 0.5rem;
 
+  /* COLORS */
   --background: #fff;
   --background-secondary: #f9f8f8;
 
@@ -44,6 +46,8 @@
   --text-primary: #000;
   --text-secondary: #fff;
   --text-tertiary: #8491a5;
+  --text-navbar: #606160;
+
   --ring: oklch(0.705 0.015 286.067);
 
   --success: #22c55e;
@@ -55,11 +59,24 @@
   --input: oklch(0.92 0.004 286.32);
 }
 
+@theme {
+  /* BREAKPOINTS */
+  --breakpoint-xs: 0px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1920px;
+
+  --font-display: "Open Sans", sans-serif;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-primary;
+    @apply bg-background text-text-primary font-display;
   }
 }

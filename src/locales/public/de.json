@@ -1,6 +1,18 @@
 {
-    "homePage": {
-        "title": "Willkommen bei der Open Source Community",
-        "description": "Hier finden Sie alle Informationen über die Open Source Community und ihre Projekte."
-    }
+  "common": {
+    "floorPlan": "Grundriss",
+    "floorPlans": "Grundrisse",
+    "threeSixtyTour": "360 Grad Rundgang",
+    "salesOptimized": "Verkaufsoptimierte Grundrisse",
+    "sized": "Bemaßte Grundrisse",
+    "measuringService": "Aufmaßservice vor Ort",
+    "individual": "Individuelle Grundrisse",
+    "floorPlanDesigns": "Grundriss Designs",
+    "threeSixtyTourService": "360 Grad Service"
+  },
+
+  "homePage": {
+    "title": "Willkommen bei der Open Source Community",
+    "description": "Hier finden Sie alle Informationen über die Open Source Community und ihre Projekte."
+  }
 }
