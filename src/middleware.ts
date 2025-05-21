@@ -33,7 +33,7 @@ export function middleware(request: NextRequest) {
   const locale = getLocale(request);
   request.nextUrl.pathname = `/${locale}/${pathname}`;
   // e.g. incoming request is /
-  // The new URL is now /en-US/
+  // The new URL is now /de
   return NextResponse.redirect(request.nextUrl);
 }
 
