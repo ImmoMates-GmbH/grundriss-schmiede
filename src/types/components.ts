@@ -10,3 +10,8 @@ export interface DropdownProps {
   items: DropdownItem[];
   className?: string;
 }
+
+export interface Title {
+  title: string;
+  className?: string;
+}
