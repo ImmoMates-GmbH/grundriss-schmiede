@@ -32,7 +32,7 @@ const Navbar = async ({
           priority={true}
           className="cursor-pointer"
         />
-        <div className="hidden items-center gap-14 lg:flex">
+        <div className="hidden items-center gap-12 lg:flex">
           <NavigationMenu
             trigger={dict.common.floorPlans}
             content={
@@ -67,6 +67,12 @@ const Navbar = async ({
             content={""}
             link="#"
             linkTitle="FAQ's"
+          />
+          <NavigationMenu
+            trigger={""}
+            content={""}
+            link="#"
+            linkTitle={sharedDict.common.contact}
           />
         </div>
         <div className="hidden items-center gap-4 lg:flex">
