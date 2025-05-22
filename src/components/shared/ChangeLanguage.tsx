@@ -16,10 +16,10 @@ const ChangeLanguage = () => {
 
   useEffect(() => {
     if (window.location.href.includes("/de")) {
-      setLang("DE");
+      setLang("EN");
     }
     if (window.location.href.includes("/en")) {
-      setLang("EN");
+      setLang("DE");
     }
   }, [lang]);
 

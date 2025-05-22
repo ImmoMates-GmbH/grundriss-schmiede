@@ -1,3 +1,4 @@
 import ChangeLanguage from "./ChangeLanguage";
+import Dropdown from "./Dropdown";
 
-export { ChangeLanguage };
+export { ChangeLanguage, Dropdown };
