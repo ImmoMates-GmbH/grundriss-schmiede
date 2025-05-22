@@ -23,3 +23,8 @@ export interface SidebarProps {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   sharedDict: Record<string, any>;
 }
+
+export interface FooterLinksProps {
+  title: string;
+  href: string;
+}
