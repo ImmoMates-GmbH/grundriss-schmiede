@@ -1,0 +1,9 @@
+const page = async () => {
+  return (
+    <div>
+      <h1>hi</h1>
+    </div>
+  );
+};
+
+export default page;

@@ -1,17 +1,19 @@
 import TitleH3 from "@/components/shared/fonts/TitleH3";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import FooterLink from "./FooterLink";
 
 const LegalLinks = () => {
+  const t = useTranslations("common");
   return (
     <div className="m-auto flex w-full max-w-screen-xl flex-wrap justify-center gap-10 px-4 py-12 md:justify-between">
       <div className="flex flex-col gap-3">
         <TitleH3 className="text-primary pb-8" title={"Rechtliches"} />
-        <FooterLink title={"Datensicherheit"} href={"#"} />
-        <FooterLink title={"Datenschutz"} href={"#"} />
-        <FooterLink title={"Impressum"} href={"#"} />
-        <FooterLink title={"AGB"} href={"#"} />
-        <FooterLink title={"Widerrufsbelehrung"} href={"#"} />
+        <FooterLink title={t("dataSecurity")} href={"#"} />
+        <FooterLink title={t("privacy")} href={"#"} />
+        <FooterLink title={t("imprint")} href={"#"} />
+        <FooterLink title={t("terms")} href={"#"} />
+        <FooterLink title={t("cancellationPolicy")} href={"#"} />
       </div>
 
       <div className="flex flex-col gap-3">
@@ -19,7 +21,7 @@ const LegalLinks = () => {
         <FooterLink title={"mail@grundriss-schmiede.de"} href={"#"} />
         <FooterLink title={"Team"} href={"#"} />
         <FooterLink title={"FAQ's"} href={"#"} />
-        <FooterLink title={"Stellenanzeigen"} href={"#"} />
+        <FooterLink title={t("jobAds")} href={"#"} />
         <FooterLink title={"Partner"} href={"#"} />
       </div>
 

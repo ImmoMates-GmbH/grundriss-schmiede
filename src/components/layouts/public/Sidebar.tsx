@@ -11,13 +11,14 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { SidebarProps } from "@/types/public/interfaces/components";
 import { Menu } from "lucide-react";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/images/logos/main-logo.png";
 
-const Sidebar = ({ dict, sharedDict }: SidebarProps) => {
+const Sidebar = () => {
+  const t = useTranslations("common");
   return (
     <Sheet>
       <SheetTrigger>
@@ -48,32 +49,32 @@ const Sidebar = ({ dict, sharedDict }: SidebarProps) => {
           items={[
             {
               value: "1",
-              trigger: dict.common.floorPlans,
+              trigger: t("floorPlans"),
               content: (
                 <>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.salesOptimized}
+                      {t("salesOptimized")}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.sized}
+                      {t("sized")}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.measuringService}
+                      {t("measuringService")}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.individual}
+                      {t("individual")}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.floorPlanDesigns}
+                      {t("floorPlanDesigns")}
                     </Link>
                   </SheetClose>
                 </>
@@ -81,17 +82,17 @@ const Sidebar = ({ dict, sharedDict }: SidebarProps) => {
             },
             {
               value: "2",
-              trigger: dict.common.threeSixtyTour,
+              trigger: t("threeSixtyTour"),
               content: (
                 <>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.threeSixtyTour}
+                      {t("threeSixtyTour")}
                     </Link>
                   </SheetClose>
                   <SheetClose asChild>
                     <Link className="text-lg" href="#">
-                      {dict.common.threeSixtyTourService}
+                      {t("threeSixtyTourService")}
                     </Link>
                   </SheetClose>
                 </>
@@ -112,7 +113,7 @@ const Sidebar = ({ dict, sharedDict }: SidebarProps) => {
           <div className="px-10 py-3">
             <SheetClose asChild>
               <Link className="text-primary text-xl font-medium" href="#">
-                {sharedDict.common.contact}
+                {t("contact")}
               </Link>
             </SheetClose>
           </div>
@@ -128,19 +129,19 @@ const Sidebar = ({ dict, sharedDict }: SidebarProps) => {
         <SheetFooter className="flex flex-wrap items-center justify-center gap-4">
           <SheetClose asChild>
             <Link className="text-text-navbar text-sm underline" href="#">
-              {sharedDict.common.imprint}
+              {t("imprint")}
             </Link>
           </SheetClose>
 
           <SheetClose asChild>
             <Link className="text-text-navbar text-sm underline" href="#">
-              {sharedDict.common.privacy}
+              {t("privacy")}
             </Link>
           </SheetClose>
 
           <SheetClose asChild>
             <Link className="text-text-navbar text-sm underline" href="#">
-              {sharedDict.common.terms}
+              {t("terms")}
             </Link>
           </SheetClose>
 
