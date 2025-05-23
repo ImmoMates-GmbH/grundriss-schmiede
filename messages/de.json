@@ -19,5 +19,10 @@
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die angeforderte Seite existiert nicht oder wurde entfernt.",
+    "backToHome": "Zurück zur Startseite"
   }
 }
