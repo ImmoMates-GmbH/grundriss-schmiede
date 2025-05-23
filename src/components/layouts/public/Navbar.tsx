@@ -2,20 +2,13 @@ import { ChangeLanguage } from "@/components/shared";
 import { MenuLink, NavigationMenu } from "@/components/shared/public";
 import MainLink from "@/components/shared/public/MainLink";
 import { Separator } from "@/components/ui/separator";
-import { getSharedDictionary } from "@/lib/dictionaries";
-import { getDictionary } from "@/lib/public/dictionaries";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import logo from "../../../../public/images/logos/main-logo.png";
 import Sidebar from "./Sidebar";
 
-const Navbar = async ({
-  params,
-}: {
-  params: Promise<{ lang: "de" | "en" }>;
-}) => {
-  const { lang } = await params;
-  const dict = await getDictionary(lang);
-  const sharedDict = await getSharedDictionary(lang);
+const Navbar = () => {
+  const t = useTranslations("common");
   return (
     <div className="position-fixed bg-background top-0 left-0 z-50 border-b shadow-sm">
       <div className="m-auto flex w-full max-w-screen-xl items-center justify-between p-3.5 lg:p-4">
@@ -34,31 +27,28 @@ const Navbar = async ({
         />
         <div className="hidden items-center gap-12 lg:flex">
           <NavigationMenu
-            trigger={dict.common.floorPlans}
+            trigger={t("floorPlans")}
             content={
               <>
-                <MenuLink href={"#"} title={dict.common.salesOptimized} />
+                <MenuLink href={"/admin"} title={t("salesOptimized")} />
                 <Separator />
-                <MenuLink href={"#"} title={dict.common.sized} />
+                <MenuLink href={"#"} title={t("sized")} />
                 <Separator />
-                <MenuLink href={"#"} title={dict.common.measuringService} />
+                <MenuLink href={"#"} title={t("measuringService")} />
                 <Separator />
-                <MenuLink href={"#"} title={dict.common.individual} />
+                <MenuLink href={"#"} title={t("individual")} />
                 <Separator />
-                <MenuLink href={"#"} title={dict.common.floorPlanDesigns} />
+                <MenuLink href={"#"} title={t("floorPlanDesigns")} />
               </>
             }
           />
           <NavigationMenu
-            trigger={dict.common.threeSixtyTour}
+            trigger={t("threeSixtyTour")}
             content={
               <>
-                <MenuLink href={"#"} title={dict.common.threeSixtyTour} />
+                <MenuLink href={"#"} title={t("threeSixtyTour")} />
                 <Separator />
-                <MenuLink
-                  href={"#"}
-                  title={dict.common.threeSixtyTourService}
-                />
+                <MenuLink href={"#"} title={t("threeSixtyTourService")} />
               </>
             }
           />
@@ -72,15 +62,15 @@ const Navbar = async ({
             trigger={""}
             content={""}
             link="#"
-            linkTitle={sharedDict.common.contact}
+            linkTitle={t("contact")}
           />
         </div>
         <div className="hidden items-center gap-4 lg:flex">
-          <MainLink href={"#"} title={"Login"} />
+          <MainLink href={"#"} title="Login" />
           <ChangeLanguage />
         </div>
         <div className="flex items-center lg:hidden">
-          <Sidebar sharedDict={sharedDict} dict={dict} />
+          <Sidebar />
         </div>
       </div>
     </div>

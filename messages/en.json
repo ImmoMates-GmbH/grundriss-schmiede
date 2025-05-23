@@ -8,11 +8,16 @@
     "measuringService": "On-site measuring service",
     "individual": "Individual floor plans",
     "floorPlanDesigns": "Floor plan designs",
-    "threeSixtyTourService": "360 Tour Service"
+    "threeSixtyTourService": "360 Tour Service",
+    "imprint": "Imprint",
+    "privacy": "Privacy policy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "dataSecurity": "Data security",
+    "cancellationPolicy": "Cancellation policy",
+    "jobAds": "Jobs"
   },
-
-  "homePage": {
-    "title": "Welcome to the Home Page",
-    "description": "This is the home page of our application."
+  "footer": {
+    "rights": "All rights reserved."
   }
 }

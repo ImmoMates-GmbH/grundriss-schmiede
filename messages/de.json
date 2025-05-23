@@ -8,11 +8,16 @@
     "measuringService": "Aufmaßservice vor Ort",
     "individual": "Individuelle Grundrisse",
     "floorPlanDesigns": "Grundriss Designs",
-    "threeSixtyTourService": "360 Grad Service"
+    "threeSixtyTourService": "360 Grad Service",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "dataSecurity": "Datensicherheit",
+    "cancellationPolicy": "Widerrufsrecht",
+    "jobAds": "Stellenanzeigen"
   },
-
-  "homePage": {
-    "title": "Willkommen bei der Open Source Community",
-    "description": "Hier finden Sie alle Informationen über die Open Source Community und ihre Projekte."
+  "footer": {
+    "rights": "Alle Rechte vorbehalten."
   }
 }
