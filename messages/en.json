@@ -19,5 +19,10 @@
   },
   "footer": {
     "rights": "All rights reserved."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The requested page does not exist or has been removed.",
+    "backToHome": "Back to home"
   }
 }
