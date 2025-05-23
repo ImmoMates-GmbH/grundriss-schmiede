@@ -8,7 +8,7 @@ export default function PublicLayout({
   return (
     <>
       <Navbar />
-      <main className="flex-grow">{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   );
